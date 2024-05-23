@@ -20,7 +20,7 @@ export const CreateBook = () => {
     };
     setLoading(true);
     axios
-      .post("http://localhost:5555/books", data)
+      .post("https://book-store-backend-sand.vercel.app/books", data)
       .then(() => {
         setLoading(false);
         navigate("/");
